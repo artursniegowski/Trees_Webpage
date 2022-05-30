@@ -1,0 +1,43 @@
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left {
+    margin-left: 0px;
+}
+.right {
+    margin-right: 0px;
+    padding: 4px;
+    display: inline;
+}
+header li,a{
+    display: inline;
+    margin: 0 8px;
+    padding: 4px;
+    text-align: center;
+}
+.font-header {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+}
+header > div > ul > li > a {
+    text-decoration: none;
+    color: rgba(15, 5, 4, 0.588);
+    text-shadow: 2px 2px 2px black;
+}
+#header-tree-logo{
+    width: 32px;
+    height: 32px;
+}

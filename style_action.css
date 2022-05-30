@@ -1,0 +1,26 @@
+#header-action_1 a:hover {
+    color: red;
+}
+#header-action_2 a:hover {
+    color: red;
+}
+#header-action_3 a:hover {
+    color: red;
+}
+#header-tree-logo:hover {
+    width : 35px;
+    height : 35px;
+}
+#main_hero_action_1:hover{
+    color: rgb(218, 216, 224);
+}
+main div.item:hover > div h3 a#main_hero_action_1{
+    color: rgb(218, 216, 224);
+}
+#main_hero_action_2:hover{
+    color: rgb(218, 216, 224);
+}
+main div.item:hover > div h3 a#main_hero_action_2{
+    color: rgb(218, 216, 224);
+}
+

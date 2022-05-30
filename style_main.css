@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+.container-hero-switch-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.item {
+    min-height: 100px;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1/1; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.left-item {  
+    background-image: url("./images/page/tree1.jpg");
+    animation-name: movingLeftTree;
+    animation-duration: 18s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes movingLeftTree{
+    0%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree1.jpg");
+    }
+    33%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree2.jpg");
+    }
+    66%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree3.jpg");
+    }
+    100%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree1.jpg");
+    }
+}
+.text-adjust-left{
+    position: absolute;
+    /* display: inline-block; */
+    bottom: 10px;
+    left: 40px;
+}
+main div div h3::after{
+    content: url("./images/logo/link.png");
+    /* display: inline-block; */
+    position: relative;
+    bottom: -6px;
+    right: 12px;
+}
+.right-item {
+    background-image: url("./images/page/tree4.jpg");
+    animation-name: movingRightTree;
+    animation-duration: 18s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-delay: 9s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes movingRightTree{
+    0%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree4.jpg");
+    }
+    33%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree5.jpg");
+    }
+    66%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree6.jpg");
+    }
+    100%{
+        background-position: 0 0;
+        background-image: url("./images/page/tree4.jpg");
+    }
+}
+.text-adjust-right{
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+}
+.font-hero {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 0, 255);
+    text-shadow: 4px 4px 2px rgb(30, 0, 255);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', cursive;
+}
