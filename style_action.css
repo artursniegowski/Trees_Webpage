@@ -14,13 +14,13 @@
 #main_hero_action_1:hover{
     color: rgb(218, 216, 224);
 }
-main div.item:hover > div h3 a#main_hero_action_1{
+main div a.item:hover > div h3#main_hero_action_1{
     color: rgb(218, 216, 224);
 }
 #main_hero_action_2:hover{
     color: rgb(218, 216, 224);
 }
-main div.item:hover > div h3 a#main_hero_action_2{
+main div a.item:hover > div h3#main_hero_action_2{
     color: rgb(218, 216, 224);
 }
 

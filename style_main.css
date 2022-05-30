@@ -14,7 +14,9 @@ body {
     aspect-ratio: 1/1; 
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
+    margin: 0;
+    padding: 0;  
 }
 .left-item {  
     background-image: url("./images/page/tree1.jpg");
@@ -48,7 +50,7 @@ body {
     bottom: 10px;
     left: 40px;
 }
-main div div h3::after{
+main div a div h3::after{
     content: url("./images/logo/link.png");
     /* display: inline-block; */
     position: relative;
