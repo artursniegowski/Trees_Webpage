@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 1000px;
+    /* height: 2000px; */
 }
 .container-hero-switch-grid{
     display: grid;
@@ -85,6 +85,7 @@ main div a div h3::after{
     }
 }
 .text-adjust-right{
+    display: inline-block;
     position: absolute;
     bottom: 10px;
     right: 40px;
@@ -98,4 +99,34 @@ main div a div h3::after{
     font-weight: bold;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', cursive;
+}
+.position-txt-hero-middle {
+    position: absolute;
+    top: 70%;
+    opacity: 0;
+    right: -18px;
+    z-index: 1;
+    animation: movingHeroTextUp 4s linear 1 forwards;
+    animation-delay: 2s;  
+}
+.style-txt-herro-middle{
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+    color: red;
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: bold;
+}
+@keyframes movingHeroTextUp{
+    0%  {top: 70%; opacity: 0;}
+    20% {top: 60%; opacity: 0.2;}
+    40% {top: 50%; opacity: 0.7;}
+    60% {top: 40%; opacity: 0.8;}
+    80% {top: 30%; opacity: 0.9;}
+    100%{top: 20%; opacity: 1;}
+}
+.container-size-bottom-main{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
 }
